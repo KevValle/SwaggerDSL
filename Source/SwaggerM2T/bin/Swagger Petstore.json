@@ -20,7 +20,7 @@
         "/pets": {
             "get": {
 				"summary": "Pets",
-				"description": "Return every damn pet",
+				"description": "Return every pet",
 					 "parameters": [ 
 						{
 						"name": "limit",
@@ -42,42 +42,100 @@
 								"$ref": "#/definitions/Pet"
 							}
 						}
+					}, 
+					"404": {
+						"description": "Pet not found",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Pet"
+							}
+						}
 					}
 				}
 			}
 		}, 
-        "/exposicion": {
-            "post": {
+        "/petToOwner": {
+            "put": {
 				"summary": "Exposervice",
 				"description": "Servicio para la exposicion",
 					 "parameters": [ 
 						{
-						"name": "test",
+						"name": "Ownerdata",
 						"in": "query",
-						"description": "query",
-						"required": false,
+						"description": "Datos de la mascota",
+						"required": true,
 						"type": "integer"
 					},  
 
 					
 						{
-						"name": "test2",
+						"name": "PetData",
 						"in": "query",
-						"description": "Hola mundo",
+						"description": "Datos del dueño",
 						"required": true,
 						"type": "integer"
 					 }], 
 
 				"tags": [
-					"holamundo"
+					"Pets", 
+					"owner", 
+					"gestion"
 				],
 				"responses": {
 					"200": {
-						"description": "Two",
+						"description": "Invalid owner",
 						"schema": {
 							"type": "string",
 							"items": {
-								"$ref": "#/definitions/Two"
+								"$ref": "#/definitions/owner"
+							}
+						}
+					}, 
+					"300": {
+						"description": "Invalid pet",
+						"schema": {
+							"type": "string",
+							"items": {
+								"$ref": "#/definitions/Pet"
+							}
+						}
+					}
+				}
+			}
+		}, 
+        "/deletePet": {
+            "delete": {
+				"summary": "Deletepet",
+				"description": "Delete pet",
+					 "parameters": [ 
+						{
+						"name": "limit",
+						"in": "query",
+						"description": "How many items to return",
+						"required": false,
+						"type": "integer"
+					 }], 
+
+				"tags": [
+					"pets"
+				],
+				"responses": {
+					"200": {
+						"description": "Pets deleted",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Pet"
+							}
+						}
+					}, 
+					"404": {
+						"description": "Pet not found",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Pet"
 							}
 						}
 					}
@@ -95,12 +153,28 @@
 					}, 
 					"name": {
 						"type": "string" 
+					}, 
+					"race": {
+						"type": "string" 
 					}
 			}
 
 		}, 
-		"Two": {
-			"type": "string"
+		"owner": {
+			"type": "object",
+			"properties": {
+					"id": {
+						"type": "integer",
+						"format": "int64" 
+					}, 
+					"fullname": {
+						"type": "string" 
+					}, 
+					"location": {
+						"type": "string" 
+					}
+			}
+
 		}
 	}
 	

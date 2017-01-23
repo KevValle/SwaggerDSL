@@ -350,7 +350,7 @@
               </source>
               <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Response/schemaRef"/>
             </body>
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}"/>
             <body xsi:type="mtl:IfBlock">
               <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
               <ifExpr xsi:type="ocl.ecore:OperationCallExp">
@@ -371,7 +371,7 @@
                 <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
               </ifExpr>
             </body>
-            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;"/>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
             <loopVariable name="r">
               <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
             </loopVariable>
@@ -1615,48 +1615,48 @@
     </eAnnotations>
     <eAnnotations source="positions.140" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.8">
       <details key="start" value="1728"/>
-      <details key="end" value="1746"/>
+      <details key="end" value="1753"/>
       <details key="line" value="62"/>
     </eAnnotations>
     <eAnnotations source="positions.141" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9">
-      <details key="start" value="1746"/>
-      <details key="end" value="1783"/>
-      <details key="line" value="64"/>
+      <details key="start" value="1753"/>
+      <details key="end" value="1790"/>
+      <details key="line" value="65"/>
     </eAnnotations>
     <eAnnotations source="positions.142" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%">
-      <details key="start" value="1776"/>
-      <details key="end" value="1778"/>
-      <details key="line" value="64"/>
+      <details key="start" value="1783"/>
+      <details key="end" value="1785"/>
+      <details key="line" value="65"/>
     </eAnnotations>
     <eAnnotations source="positions.143" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1">
-      <details key="start" value="1750"/>
-      <details key="end" value="1775"/>
+      <details key="start" value="1757"/>
+      <details key="end" value="1782"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.144" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/r">
-      <details key="start" value="1751"/>
-      <details key="end" value="1752"/>
+      <details key="start" value="1758"/>
+      <details key="end" value="1759"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.145" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%">
-      <details key="start" value="1756"/>
-      <details key="end" value="1774"/>
+      <details key="start" value="1763"/>
+      <details key="end" value="1781"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.146" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%/%">
-      <details key="start" value="1756"/>
-      <details key="end" value="1766"/>
+      <details key="start" value="1763"/>
+      <details key="end" value="1773"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.147" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%/%/p">
-      <details key="start" value="1756"/>
-      <details key="end" value="1757"/>
+      <details key="start" value="1763"/>
+      <details key="end" value="1764"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.148" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.10">
-      <details key="start" value="1783"/>
+      <details key="start" value="1790"/>
       <details key="end" value="1791"/>
-      <details key="line" value="65"/>
+      <details key="line" value="66"/>
     </eAnnotations>
     <eAnnotations source="positions.149" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
       <details key="start" value="1538"/>

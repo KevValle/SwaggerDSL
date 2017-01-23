@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <swaggerDSL:Swagger xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:swaggerDSL="http://www.example.org/swaggerDSL" host="petstore.swagger.io" schemes="http" basePath="/api" produces="application/json" infoTitle="Swagger Petstore" infoDescription="Move your app forward with the Pet  API" infoVersion="1.0.0">
-  <path path="/pets" description="Return every damn pet" summary="Pets" operationID="Pets" produces="application/json">
+  <path path="/pets" description="Return every pet" summary="Pets" operationID="Pets" produces="application/json">
     <parameters name="limit" in="query" description="How many items to return" format="int32" type="integer"/>
     <tags tag="pets"/>
     <response name="200" description="A list of pets" schemaType="array" schemaRef="#/definitions/Pet"/>
+    <response name="404" description="Pet not found" schemaType="array" schemaRef="#/definitions/Pet"/>
   </path>
-  <path path="/exposicion" description="Servicio para la exposicion" header="POST" summary="Exposervice" operationID="Expo" produces="application/json">
-    <parameters name="test" in="query" description="query" format="int32" type="integer"/>
-    <parameters name="test2" in="query" description="Hola mundo" required="true" format="int64" type="integer"/>
-    <tags tag="holamundo"/>
-    <response name="200" description="Two" schemaType="string" schemaRef="#/definitions/Two"/>
+  <path path="/petToOwner" description="Servicio para la exposicion" header="PUT" summary="Exposervice" operationID="Expo" produces="application/json">
+    <parameters name="Ownerdata" in="query" description="Datos de la mascota" required="true" format="int32" type="integer"/>
+    <parameters name="PetData" in="query" description="Datos del dueño" required="true" format="int64" type="integer"/>
+    <tags tag="Pets"/>
+    <tags tag="owner"/>
+    <tags tag="gestion"/>
+    <response name="200" description="Invalid owner" schemaType="string" schemaRef="#/definitions/owner"/>
+    <response name="300" description="Invalid pet" schemaType="string" schemaRef="#/definitions/Pet"/>
+  </path>
+  <path path="/deletePet" description="Delete pet" header="DELETE" summary="Deletepet" operationID="Deletepet" produces="application/json">
+    <parameters name="limit" in="query" description="How many items to return" format="int32" type="integer"/>
+    <tags tag="pets"/>
+    <response name="200" description="Pets deleted" schemaType="array" schemaRef="#/definitions/Pet"/>
+    <response name="404" description="Pet not found" schemaType="array" schemaRef="#/definitions/Pet"/>
   </path>
   <definition name="Pet" type="object">
-    <properties propertyName="id" type="integer" description="id de la mascota"/>
-    <properties propertyName="name" type="string" description="nombre de la mascota"/>
+    <properties propertyName="id" type="integer" description="id of the pet"/>
+    <properties propertyName="name" type="string" description="name of the pet"/>
+    <properties propertyName="race" type="string" description="race of the pet"/>
   </definition>
-  <definition name="Two" type="string"/>
+  <definition name="owner" type="object">
+    <properties propertyName="id" type="integer" description="id of the person"/>
+    <properties propertyName="fullname" type="string" description="full name of the owner"/>
+    <properties propertyName="location" type="string" description="location of the owner"/>
+  </definition>
 </swaggerDSL:Swagger>

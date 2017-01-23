@@ -61,8 +61,8 @@
 							"items": {
 								"$ref": "[r.schemaRef/]"
 							}
-						}[if (r <> p.response->last())], [/if]
-					}
+						}
+					}[if (r <> p.response->last())], [/if]
 					[/for]
 				}
 			}
