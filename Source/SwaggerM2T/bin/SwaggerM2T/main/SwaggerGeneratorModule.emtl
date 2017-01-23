@@ -1,0 +1,2077 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="SwaggerGeneratorModule" nsURI="SwaggerM2T::main::SwaggerGeneratorModule" startHeaderPosition="75" endHeaderPosition="142">
+    <documentation xsi:type="mtl:ModuleDocumentation">
+      <body startPosition="33" endPosition="72" value="&#xD;&#xA;The documentation of the module.&#xD;&#xA;&#xD;&#xA;"/>
+    </documentation>
+    <input>
+      <takesTypesFrom href="http://www.example.org/swaggerDSL#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="SwaggerGeneratorModule" visibility="Public" main="true">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{&#xA;    &quot;swagger&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/swagger"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;    &quot;info&quot;: {&#xA;        &quot;title&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/infoTitle"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;        &quot;description&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/infoDescription"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;        &quot;version&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/infoVersion"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;    },&#xA;    &quot;host&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/host"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;    &quot;schemes&quot;: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;        &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/schemes"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;    "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;    &quot;basePath&quot;: &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/basePath"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&quot;consumes&quot;: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/consumes"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;&#x9;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;    &quot;produces&quot;: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;        &quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/produces"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;    "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;    &quot;paths&quot;: {&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="        &quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Path/path"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;: {&#xA;            &quot;"/>
+          <body xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_OclAny_Class/toString">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EEnum" href="http://www.example.org/swaggerDSL#//Services"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Path/header"/>
+              </source>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;: {&#xA;&#x9;&#x9;&#x9;&#x9;&quot;summary&quot;: &quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Path/summary"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&quot;description&quot;: &quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Path/description"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+            <body xsi:type="mtl:IfBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &quot;parameters&quot;: "/>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Parameters)">
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/parameters"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/first"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+              </ifExpr>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;name&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Parameters/name"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;in&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Parameters/in"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;description&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Parameters/description"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;required&quot;: "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Parameters/required"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;type&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Parameters/type"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+            <body xsi:type="mtl:IfBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" }],"/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Parameters)">
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/parameters"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+              </ifExpr>
+            </body>
+            <body xsi:type="mtl:IfBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}, "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="pm" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Parameters)">
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/parameters"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+              </ifExpr>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#xA;&#xA;"/>
+            <loopVariable name="pm">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Parameters)">
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/parameters"/>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&quot;tags&quot;: "/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;&quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="t" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.13/t">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Tags/tag"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;"/>
+            <body xsi:type="mtl:IfBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="t" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.13/t">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Tags)">
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/tags"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+              </ifExpr>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+            <loopVariable name="t">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Tags)">
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/tags"/>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;&#x9;&#x9;&#x9;&#x9;&quot;responses&quot;: {&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;&quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="r" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Response/name"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;: {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;description&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="r" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Response/description"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;schema&quot;: {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;type&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="r" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Response/schemaType"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;items&quot;: {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;$ref&quot;: &quot;"/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="r" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Response/schemaRef"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}"/>
+            <body xsi:type="mtl:IfBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="r" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Response)">
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/response"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+              </ifExpr>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;"/>
+            <loopVariable name="r">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Response)">
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Path/response"/>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}"/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.31/p">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Path)">
+                  <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Swagger/path"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Path)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Swagger/path"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    },&#xA;&#x9;&quot;definitions&quot;: {&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Definition/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;: {&#xA;&#x9;&#x9;&#x9;&quot;type&quot;: &quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Definition/type"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;"/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;&#x9;&#x9;&#x9;&quot;properties&quot;: {&#xA;"/>
+            <body xsi:type="mtl:ForBlock">
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;&quot;"/>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Properties/propertyName"/>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;: {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;type&quot;: &quot;"/>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Properties/type"/>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;"/>
+              <body xsi:type="mtl:IfBlock">
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;format&quot;: &quot;int64&quot;"/>
+                <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/strcmp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/p">
+                        <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Properties/type"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="integer">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                  </source>
+                  <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="0">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+                </ifExpr>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}"/>
+              <body xsi:type="mtl:IfBlock">
+                <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+                <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+                    <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Properties)">
+                      <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+                        <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Definition/properties"/>
+                    </source>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+                </ifExpr>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+              <loopVariable name="p">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+              </loopVariable>
+              <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Properties)">
+                <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+                  <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Definition/properties"/>
+              </iterSet>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;}&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/strcmp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Definition/type"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="object">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </source>
+              <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="0">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;}"/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="n" referredVariable="/0/SwaggerGeneratorModule/%.1/%.33/n">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Definition)">
+                  <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+                    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Swagger/definition"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/last"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/%3C%3E"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="n">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/23/OrderedSet(Definition)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/swaggerDSL#//Swagger/definition"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;}&#xA;&#x9;&#xA;}&#x9;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aSwagger" referredVariable="/0/SwaggerGeneratorModule/aSwagger">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/swaggerDSL#//Swagger/infoTitle"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".json">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Cp1252">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="149" endPosition="209" value="&#xD;&#xA;The documentation of the template.&#xD;&#xA;@param aSwagger&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aSwagger">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aSwagger">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="strcmp">
+        <eAnnotations source="MTL"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        <eParameters name="s1">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="SwaggerGeneratorModule">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/SwaggerGeneratorModule"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aSwagger">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+      <eOperations name="toString">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="swaggerDSL_Swagger_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/swaggerDSL#//Swagger"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Path)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Parameters)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Tags)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Response)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Definition)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Properties)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Parameters"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Tags"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Response"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Path"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Properties"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Definition"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/swaggerDSL#//Swagger"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="30"/>
+      <details key="end" value="74"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/SwaggerGeneratorModule">
+      <details key="start" value="212"/>
+      <details key="end" value="2351"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/SwaggerGeneratorModule/%">
+      <details key="start" value="273"/>
+      <details key="end" value="275"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/SwaggerGeneratorModule/%.1">
+      <details key="start" value="295"/>
+      <details key="end" value="2337"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/SwaggerGeneratorModule/%.1/%">
+      <details key="start" value="356"/>
+      <details key="end" value="374"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/SwaggerGeneratorModule/%.1/%.1">
+      <details key="start" value="375"/>
+      <details key="end" value="391"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/SwaggerGeneratorModule/%.1/%.1/aSwagger">
+      <details key="start" value="375"/>
+      <details key="end" value="383"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/SwaggerGeneratorModule/%.1/%.2">
+      <details key="start" value="393"/>
+      <details key="end" value="428"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/SwaggerGeneratorModule/%.1/%.3">
+      <details key="start" value="429"/>
+      <details key="end" value="447"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/SwaggerGeneratorModule/%.1/%.3/aSwagger">
+      <details key="start" value="429"/>
+      <details key="end" value="437"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/SwaggerGeneratorModule/%.1/%.4">
+      <details key="start" value="449"/>
+      <details key="end" value="476"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/SwaggerGeneratorModule/%.1/%.5">
+      <details key="start" value="477"/>
+      <details key="end" value="501"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/SwaggerGeneratorModule/%.1/%.5/aSwagger">
+      <details key="start" value="477"/>
+      <details key="end" value="485"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/SwaggerGeneratorModule/%.1/%.6">
+      <details key="start" value="503"/>
+      <details key="end" value="526"/>
+      <details key="line" value="19"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/SwaggerGeneratorModule/%.1/%.7">
+      <details key="start" value="527"/>
+      <details key="end" value="547"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/SwaggerGeneratorModule/%.1/%.7/aSwagger">
+      <details key="start" value="527"/>
+      <details key="end" value="535"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/SwaggerGeneratorModule/%.1/%.8">
+      <details key="start" value="549"/>
+      <details key="end" value="571"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/SwaggerGeneratorModule/%.1/%.9">
+      <details key="start" value="572"/>
+      <details key="end" value="585"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/SwaggerGeneratorModule/%.1/%.9/aSwagger">
+      <details key="start" value="572"/>
+      <details key="end" value="580"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/SwaggerGeneratorModule/%.1/%.10">
+      <details key="start" value="587"/>
+      <details key="end" value="605"/>
+      <details key="line" value="22"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/SwaggerGeneratorModule/%.1/%.11">
+      <details key="start" value="606"/>
+      <details key="end" value="609"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/SwaggerGeneratorModule/%.1/%.12">
+      <details key="start" value="611"/>
+      <details key="end" value="621"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/SwaggerGeneratorModule/%.1/%.13">
+      <details key="start" value="622"/>
+      <details key="end" value="638"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/SwaggerGeneratorModule/%.1/%.13/aSwagger">
+      <details key="start" value="622"/>
+      <details key="end" value="630"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/SwaggerGeneratorModule/%.1/%.14">
+      <details key="start" value="640"/>
+      <details key="end" value="646"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/SwaggerGeneratorModule/%.1/%.15">
+      <details key="start" value="647"/>
+      <details key="end" value="650"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/SwaggerGeneratorModule/%.1/%.16">
+      <details key="start" value="652"/>
+      <details key="end" value="671"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/SwaggerGeneratorModule/%.1/%.17">
+      <details key="start" value="672"/>
+      <details key="end" value="689"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/SwaggerGeneratorModule/%.1/%.17/aSwagger">
+      <details key="start" value="672"/>
+      <details key="end" value="680"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/SwaggerGeneratorModule/%.1/%.18">
+      <details key="start" value="691"/>
+      <details key="end" value="707"/>
+      <details key="line" value="26"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/SwaggerGeneratorModule/%.1/%.19">
+      <details key="start" value="708"/>
+      <details key="end" value="711"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/SwaggerGeneratorModule/%.1/%.20">
+      <details key="start" value="713"/>
+      <details key="end" value="717"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/SwaggerGeneratorModule/%.1/%.21">
+      <details key="start" value="718"/>
+      <details key="end" value="735"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/SwaggerGeneratorModule/%.1/%.21/aSwagger">
+      <details key="start" value="718"/>
+      <details key="end" value="726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/SwaggerGeneratorModule/%.1/%.22">
+      <details key="start" value="737"/>
+      <details key="end" value="740"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/SwaggerGeneratorModule/%.1/%.23">
+      <details key="start" value="741"/>
+      <details key="end" value="744"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/SwaggerGeneratorModule/%.1/%.24">
+      <details key="start" value="746"/>
+      <details key="end" value="764"/>
+      <details key="line" value="29"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/SwaggerGeneratorModule/%.1/%.25">
+      <details key="start" value="765"/>
+      <details key="end" value="768"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/SwaggerGeneratorModule/%.1/%.26">
+      <details key="start" value="770"/>
+      <details key="end" value="780"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/SwaggerGeneratorModule/%.1/%.27">
+      <details key="start" value="781"/>
+      <details key="end" value="798"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/SwaggerGeneratorModule/%.1/%.27/aSwagger">
+      <details key="start" value="781"/>
+      <details key="end" value="789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/SwaggerGeneratorModule/%.1/%.28">
+      <details key="start" value="800"/>
+      <details key="end" value="806"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/SwaggerGeneratorModule/%.1/%.29">
+      <details key="start" value="807"/>
+      <details key="end" value="810"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/SwaggerGeneratorModule/%.1/%.30">
+      <details key="start" value="812"/>
+      <details key="end" value="829"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/SwaggerGeneratorModule/%.1/%.31">
+      <details key="start" value="831"/>
+      <details key="end" value="1866"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/SwaggerGeneratorModule/%.1/%.31/%">
+      <details key="start" value="864"/>
+      <details key="end" value="873"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/SwaggerGeneratorModule/%.1/%.31/%.1">
+      <details key="start" value="874"/>
+      <details key="end" value="880"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/SwaggerGeneratorModule/%.1/%.31/%.1/p">
+      <details key="start" value="874"/>
+      <details key="end" value="875"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/SwaggerGeneratorModule/%.1/%.31/%.2">
+      <details key="start" value="882"/>
+      <details key="end" value="900"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/SwaggerGeneratorModule/%.1/%.31/%.3">
+      <details key="start" value="901"/>
+      <details key="end" value="930"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/SwaggerGeneratorModule/%.1/%.31/%.3/%">
+      <details key="start" value="901"/>
+      <details key="end" value="920"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/SwaggerGeneratorModule/%.1/%.31/%.3/%/%">
+      <details key="start" value="901"/>
+      <details key="end" value="909"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/SwaggerGeneratorModule/%.1/%.31/%.3/%/%/p">
+      <details key="start" value="901"/>
+      <details key="end" value="902"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/SwaggerGeneratorModule/%.1/%.31/%.4">
+      <details key="start" value="932"/>
+      <details key="end" value="953"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/SwaggerGeneratorModule/%.1/%.31/%.5">
+      <details key="start" value="954"/>
+      <details key="end" value="963"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/SwaggerGeneratorModule/%.1/%.31/%.5/p">
+      <details key="start" value="954"/>
+      <details key="end" value="955"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/SwaggerGeneratorModule/%.1/%.31/%.6">
+      <details key="start" value="965"/>
+      <details key="end" value="988"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/SwaggerGeneratorModule/%.1/%.31/%.7">
+      <details key="start" value="989"/>
+      <details key="end" value="1002"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/SwaggerGeneratorModule/%.1/%.31/%.7/p">
+      <details key="start" value="989"/>
+      <details key="end" value="990"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/SwaggerGeneratorModule/%.1/%.31/%.8">
+      <details key="start" value="1004"/>
+      <details key="end" value="1007"/>
+      <details key="line" value="38"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9">
+      <details key="start" value="1011"/>
+      <details key="end" value="1385"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%">
+      <details key="start" value="1050"/>
+      <details key="end" value="1055"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1">
+      <details key="start" value="1055"/>
+      <details key="end" value="1115"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%">
+      <details key="start" value="1088"/>
+      <details key="end" value="1103"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.1">
+      <details key="start" value="1104"/>
+      <details key="end" value="1107"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.2">
+      <details key="start" value="1109"/>
+      <details key="end" value="1110"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.3">
+      <details key="start" value="1059"/>
+      <details key="end" value="1087"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.3/pm">
+      <details key="start" value="1060"/>
+      <details key="end" value="1062"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.3/%">
+      <details key="start" value="1065"/>
+      <details key="end" value="1086"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.3/%/%">
+      <details key="start" value="1065"/>
+      <details key="end" value="1077"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.1/%.3/%/%/p">
+      <details key="start" value="1065"/>
+      <details key="end" value="1066"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.2">
+      <details key="start" value="1115"/>
+      <details key="end" value="1139"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.3">
+      <details key="start" value="1140"/>
+      <details key="end" value="1147"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.3/pm">
+      <details key="start" value="1140"/>
+      <details key="end" value="1142"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.4">
+      <details key="start" value="1150"/>
+      <details key="end" value="1166"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.5">
+      <details key="start" value="1167"/>
+      <details key="end" value="1173"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.5/pm">
+      <details key="start" value="1167"/>
+      <details key="end" value="1169"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.6">
+      <details key="start" value="1176"/>
+      <details key="end" value="1201"/>
+      <details key="line" value="43"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.7">
+      <details key="start" value="1202"/>
+      <details key="end" value="1216"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.7/pm">
+      <details key="start" value="1202"/>
+      <details key="end" value="1204"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.8">
+      <details key="start" value="1219"/>
+      <details key="end" value="1240"/>
+      <details key="line" value="44"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.9">
+      <details key="start" value="1241"/>
+      <details key="end" value="1252"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.9/pm">
+      <details key="start" value="1241"/>
+      <details key="end" value="1243"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.10">
+      <details key="start" value="1255"/>
+      <details key="end" value="1272"/>
+      <details key="line" value="45"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.11">
+      <details key="start" value="1273"/>
+      <details key="end" value="1280"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.11/pm">
+      <details key="start" value="1273"/>
+      <details key="end" value="1275"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.12">
+      <details key="start" value="1283"/>
+      <details key="end" value="1290"/>
+      <details key="line" value="46"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13">
+      <details key="start" value="1290"/>
+      <details key="end" value="1331"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%">
+      <details key="start" value="1322"/>
+      <details key="end" value="1326"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%.1">
+      <details key="start" value="1294"/>
+      <details key="end" value="1321"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%.1/pm">
+      <details key="start" value="1295"/>
+      <details key="end" value="1297"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%.1/%">
+      <details key="start" value="1300"/>
+      <details key="end" value="1320"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%.1/%/%">
+      <details key="start" value="1300"/>
+      <details key="end" value="1312"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.13/%.1/%/%/p">
+      <details key="start" value="1300"/>
+      <details key="end" value="1301"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14">
+      <details key="start" value="1331"/>
+      <details key="end" value="1372"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%">
+      <details key="start" value="1364"/>
+      <details key="end" value="1367"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%.1">
+      <details key="start" value="1335"/>
+      <details key="end" value="1363"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%.1/pm">
+      <details key="start" value="1336"/>
+      <details key="end" value="1338"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%.1/%">
+      <details key="start" value="1342"/>
+      <details key="end" value="1362"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%.1/%/%">
+      <details key="start" value="1342"/>
+      <details key="end" value="1354"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.14/%.1/%/%/p">
+      <details key="start" value="1342"/>
+      <details key="end" value="1343"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.15">
+      <details key="start" value="1372"/>
+      <details key="end" value="1375"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/pm">
+      <details key="start" value="1017"/>
+      <details key="end" value="1032"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.16">
+      <details key="start" value="1035"/>
+      <details key="end" value="1047"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/SwaggerGeneratorModule/%.1/%.31/%.9/%.16/p">
+      <details key="start" value="1035"/>
+      <details key="end" value="1036"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/SwaggerGeneratorModule/%.1/%.31/%.10">
+      <details key="start" value="1386"/>
+      <details key="end" value="1398"/>
+      <details key="line" value="50"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/SwaggerGeneratorModule/%.1/%.31/%.11">
+      <details key="start" value="1399"/>
+      <details key="end" value="1402"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/SwaggerGeneratorModule/%.1/%.31/%.12">
+      <details key="start" value="1404"/>
+      <details key="end" value="1405"/>
+      <details key="line" value="51"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13">
+      <details key="start" value="1410"/>
+      <details key="end" value="1495"/>
+      <details key="line" value="51"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%">
+      <details key="start" value="1436"/>
+      <details key="end" value="1442"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.1">
+      <details key="start" value="1443"/>
+      <details key="end" value="1448"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.1/t">
+      <details key="start" value="1443"/>
+      <details key="end" value="1444"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.2">
+      <details key="start" value="1450"/>
+      <details key="end" value="1451"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3">
+      <details key="start" value="1451"/>
+      <details key="end" value="1483"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%">
+      <details key="start" value="1476"/>
+      <details key="end" value="1478"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%.1">
+      <details key="start" value="1454"/>
+      <details key="end" value="1475"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%.1/t">
+      <details key="start" value="1455"/>
+      <details key="end" value="1456"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%.1/%">
+      <details key="start" value="1460"/>
+      <details key="end" value="1474"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%.1/%/%">
+      <details key="start" value="1460"/>
+      <details key="end" value="1466"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.3/%.1/%/%/p">
+      <details key="start" value="1460"/>
+      <details key="end" value="1461"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.4">
+      <details key="start" value="1483"/>
+      <details key="end" value="1484"/>
+      <details key="line" value="53"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/t">
+      <details key="start" value="1416"/>
+      <details key="end" value="1424"/>
+      <details key="line" value="51"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.5">
+      <details key="start" value="1427"/>
+      <details key="end" value="1433"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/SwaggerGeneratorModule/%.1/%.31/%.13/%.5/p">
+      <details key="start" value="1427"/>
+      <details key="end" value="1428"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/SwaggerGeneratorModule/%.1/%.31/%.14">
+      <details key="start" value="1496"/>
+      <details key="end" value="1500"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/SwaggerGeneratorModule/%.1/%.31/%.15">
+      <details key="start" value="1501"/>
+      <details key="end" value="1504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/SwaggerGeneratorModule/%.1/%.31/%.16">
+      <details key="start" value="1506"/>
+      <details key="end" value="1527"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17">
+      <details key="start" value="1532"/>
+      <details key="end" value="1802"/>
+      <details key="line" value="56"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%">
+      <details key="start" value="1566"/>
+      <details key="end" value="1572"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.1">
+      <details key="start" value="1573"/>
+      <details key="end" value="1579"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.1/r">
+      <details key="start" value="1573"/>
+      <details key="end" value="1574"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.2">
+      <details key="start" value="1581"/>
+      <details key="end" value="1608"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.3">
+      <details key="start" value="1609"/>
+      <details key="end" value="1622"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.3/r">
+      <details key="start" value="1609"/>
+      <details key="end" value="1610"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.4">
+      <details key="start" value="1624"/>
+      <details key="end" value="1661"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.5">
+      <details key="start" value="1662"/>
+      <details key="end" value="1674"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.5/r">
+      <details key="start" value="1662"/>
+      <details key="end" value="1663"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.6">
+      <details key="start" value="1676"/>
+      <details key="end" value="1714"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.7">
+      <details key="start" value="1715"/>
+      <details key="end" value="1726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.7/r">
+      <details key="start" value="1715"/>
+      <details key="end" value="1716"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.8">
+      <details key="start" value="1728"/>
+      <details key="end" value="1746"/>
+      <details key="line" value="62"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9">
+      <details key="start" value="1746"/>
+      <details key="end" value="1783"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%">
+      <details key="start" value="1776"/>
+      <details key="end" value="1778"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1">
+      <details key="start" value="1750"/>
+      <details key="end" value="1775"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/r">
+      <details key="start" value="1751"/>
+      <details key="end" value="1752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%">
+      <details key="start" value="1756"/>
+      <details key="end" value="1774"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%/%">
+      <details key="start" value="1756"/>
+      <details key="end" value="1766"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.9/%.1/%/%/p">
+      <details key="start" value="1756"/>
+      <details key="end" value="1757"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.10">
+      <details key="start" value="1783"/>
+      <details key="end" value="1791"/>
+      <details key="line" value="65"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/r">
+      <details key="start" value="1538"/>
+      <details key="end" value="1550"/>
+      <details key="line" value="56"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.11">
+      <details key="start" value="1553"/>
+      <details key="end" value="1563"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/SwaggerGeneratorModule/%.1/%.31/%.17/%.11/p">
+      <details key="start" value="1553"/>
+      <details key="end" value="1554"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/SwaggerGeneratorModule/%.1/%.31/%.18">
+      <details key="start" value="1803"/>
+      <details key="end" value="1817"/>
+      <details key="line" value="67"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19">
+      <details key="start" value="1817"/>
+      <details key="end" value="1857"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%">
+      <details key="start" value="1850"/>
+      <details key="end" value="1852"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%.1">
+      <details key="start" value="1821"/>
+      <details key="end" value="1849"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%.1/p">
+      <details key="start" value="1822"/>
+      <details key="end" value="1823"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%.1/%">
+      <details key="start" value="1827"/>
+      <details key="end" value="1848"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%.1/%/%">
+      <details key="start" value="1827"/>
+      <details key="end" value="1840"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/SwaggerGeneratorModule/%.1/%.31/%.19/%.1/%/%/aSwagger">
+      <details key="start" value="1827"/>
+      <details key="end" value="1835"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/SwaggerGeneratorModule/%.1/%.31/%.20">
+      <details key="start" value="1857"/>
+      <details key="end" value="1858"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/SwaggerGeneratorModule/%.1/%.31/p">
+      <details key="start" value="837"/>
+      <details key="end" value="845"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/SwaggerGeneratorModule/%.1/%.31/%.21">
+      <details key="start" value="848"/>
+      <details key="end" value="861"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/SwaggerGeneratorModule/%.1/%.31/%.21/aSwagger">
+      <details key="start" value="848"/>
+      <details key="end" value="856"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/SwaggerGeneratorModule/%.1/%.32">
+      <details key="start" value="1867"/>
+      <details key="end" value="1892"/>
+      <details key="line" value="71"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/SwaggerGeneratorModule/%.1/%.33">
+      <details key="start" value="1893"/>
+      <details key="end" value="2322"/>
+      <details key="line" value="73"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/SwaggerGeneratorModule/%.1/%.33/%">
+      <details key="start" value="1937"/>
+      <details key="end" value="1940"/>
+      <details key="line" value="74"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/SwaggerGeneratorModule/%.1/%.33/%.1">
+      <details key="start" value="1941"/>
+      <details key="end" value="1947"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.168" references="/0/SwaggerGeneratorModule/%.1/%.33/%.1/n">
+      <details key="start" value="1941"/>
+      <details key="end" value="1942"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.169" references="/0/SwaggerGeneratorModule/%.1/%.33/%.2">
+      <details key="start" value="1949"/>
+      <details key="end" value="1966"/>
+      <details key="line" value="74"/>
+    </eAnnotations>
+    <eAnnotations source="positions.170" references="/0/SwaggerGeneratorModule/%.1/%.33/%.3">
+      <details key="start" value="1967"/>
+      <details key="end" value="1973"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.171" references="/0/SwaggerGeneratorModule/%.1/%.33/%.3/n">
+      <details key="start" value="1967"/>
+      <details key="end" value="1968"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.172" references="/0/SwaggerGeneratorModule/%.1/%.33/%.4">
+      <details key="start" value="1975"/>
+      <details key="end" value="1976"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.173" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5">
+      <details key="start" value="1976"/>
+      <details key="end" value="2263"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.174" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%">
+      <details key="start" value="2010"/>
+      <details key="end" value="2031"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.175" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1">
+      <details key="start" value="2035"/>
+      <details key="end" value="2249"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.176" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%">
+      <details key="start" value="2073"/>
+      <details key="end" value="2079"/>
+      <details key="line" value="78"/>
+    </eAnnotations>
+    <eAnnotations source="positions.177" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.1">
+      <details key="start" value="2080"/>
+      <details key="end" value="2094"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.178" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.1/p">
+      <details key="start" value="2080"/>
+      <details key="end" value="2081"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.179" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.2">
+      <details key="start" value="2096"/>
+      <details key="end" value="2116"/>
+      <details key="line" value="78"/>
+    </eAnnotations>
+    <eAnnotations source="positions.180" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.3">
+      <details key="start" value="2117"/>
+      <details key="end" value="2123"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.181" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.3/p">
+      <details key="start" value="2117"/>
+      <details key="end" value="2118"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.182" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.4">
+      <details key="start" value="2125"/>
+      <details key="end" value="2126"/>
+      <details key="line" value="79"/>
+    </eAnnotations>
+    <eAnnotations source="positions.183" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5">
+      <details key="start" value="2126"/>
+      <details key="end" value="2191"/>
+      <details key="line" value="79"/>
+    </eAnnotations>
+    <eAnnotations source="positions.184" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%">
+      <details key="start" value="2161"/>
+      <details key="end" value="2186"/>
+      <details key="line" value="79"/>
+    </eAnnotations>
+    <eAnnotations source="positions.185" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1">
+      <details key="start" value="2130"/>
+      <details key="end" value="2160"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.186" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1/%">
+      <details key="start" value="2131"/>
+      <details key="end" value="2155"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.187" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1/%/%">
+      <details key="start" value="2131"/>
+      <details key="end" value="2137"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.188" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1/%/%/p">
+      <details key="start" value="2131"/>
+      <details key="end" value="2132"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.189" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1/%/%.1">
+      <details key="start" value="2145"/>
+      <details key="end" value="2154"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.190" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.5/%.1/%.1">
+      <details key="start" value="2158"/>
+      <details key="end" value="2159"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.191" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.6">
+      <details key="start" value="2192"/>
+      <details key="end" value="2200"/>
+      <details key="line" value="81"/>
+    </eAnnotations>
+    <eAnnotations source="positions.192" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7">
+      <details key="start" value="2200"/>
+      <details key="end" value="2238"/>
+      <details key="line" value="82"/>
+    </eAnnotations>
+    <eAnnotations source="positions.193" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%">
+      <details key="start" value="2231"/>
+      <details key="end" value="2233"/>
+      <details key="line" value="82"/>
+    </eAnnotations>
+    <eAnnotations source="positions.194" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%.1">
+      <details key="start" value="2203"/>
+      <details key="end" value="2230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.195" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%.1/p">
+      <details key="start" value="2204"/>
+      <details key="end" value="2205"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.196" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%.1/%">
+      <details key="start" value="2209"/>
+      <details key="end" value="2229"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.197" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%.1/%/%">
+      <details key="start" value="2209"/>
+      <details key="end" value="2221"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.198" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.7/%.1/%/%/n">
+      <details key="start" value="2209"/>
+      <details key="end" value="2210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.199" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.8">
+      <details key="start" value="2238"/>
+      <details key="end" value="2239"/>
+      <details key="line" value="83"/>
+    </eAnnotations>
+    <eAnnotations source="positions.200" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/p">
+      <details key="start" value="2041"/>
+      <details key="end" value="2055"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.201" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.9">
+      <details key="start" value="2058"/>
+      <details key="end" value="2070"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.202" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.1/%.9/n">
+      <details key="start" value="2058"/>
+      <details key="end" value="2059"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.203" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.2">
+      <details key="start" value="2250"/>
+      <details key="end" value="2255"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.204" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3">
+      <details key="start" value="1980"/>
+      <details key="end" value="2009"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.205" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3/%">
+      <details key="start" value="1981"/>
+      <details key="end" value="2004"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.206" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3/%/%">
+      <details key="start" value="1981"/>
+      <details key="end" value="1987"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.207" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3/%/%/n">
+      <details key="start" value="1981"/>
+      <details key="end" value="1982"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.208" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3/%/%.1">
+      <details key="start" value="1995"/>
+      <details key="end" value="2003"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.209" references="/0/SwaggerGeneratorModule/%.1/%.33/%.5/%.3/%.1">
+      <details key="start" value="2007"/>
+      <details key="end" value="2008"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.210" references="/0/SwaggerGeneratorModule/%.1/%.33/%.6">
+      <details key="start" value="2264"/>
+      <details key="end" value="2268"/>
+      <details key="line" value="86"/>
+    </eAnnotations>
+    <eAnnotations source="positions.211" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7">
+      <details key="start" value="2268"/>
+      <details key="end" value="2314"/>
+      <details key="line" value="87"/>
+    </eAnnotations>
+    <eAnnotations source="positions.212" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%">
+      <details key="start" value="2307"/>
+      <details key="end" value="2309"/>
+      <details key="line" value="87"/>
+    </eAnnotations>
+    <eAnnotations source="positions.213" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%.1">
+      <details key="start" value="2272"/>
+      <details key="end" value="2306"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.214" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%.1/n">
+      <details key="start" value="2273"/>
+      <details key="end" value="2274"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.215" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%.1/%">
+      <details key="start" value="2278"/>
+      <details key="end" value="2305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.216" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%.1/%/%">
+      <details key="start" value="2278"/>
+      <details key="end" value="2297"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.217" references="/0/SwaggerGeneratorModule/%.1/%.33/%.7/%.1/%/%/aSwagger">
+      <details key="start" value="2278"/>
+      <details key="end" value="2286"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.218" references="/0/SwaggerGeneratorModule/%.1/%.33/%.8">
+      <details key="start" value="2314"/>
+      <details key="end" value="2315"/>
+      <details key="line" value="88"/>
+    </eAnnotations>
+    <eAnnotations source="positions.219" references="/0/SwaggerGeneratorModule/%.1/%.33/n">
+      <details key="start" value="1899"/>
+      <details key="end" value="1912"/>
+      <details key="line" value="73"/>
+    </eAnnotations>
+    <eAnnotations source="positions.220" references="/0/SwaggerGeneratorModule/%.1/%.33/%.9">
+      <details key="start" value="1915"/>
+      <details key="end" value="1934"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.221" references="/0/SwaggerGeneratorModule/%.1/%.33/%.9/aSwagger">
+      <details key="start" value="1915"/>
+      <details key="end" value="1923"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.222" references="/0/SwaggerGeneratorModule/%.1/%.34">
+      <details key="start" value="2323"/>
+      <details key="end" value="2330"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.223" references="/0/SwaggerGeneratorModule/%.1/%.35">
+      <details key="start" value="302"/>
+      <details key="end" value="336"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.224" references="/0/SwaggerGeneratorModule/%.1/%.35/%">
+      <details key="start" value="302"/>
+      <details key="end" value="320"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.225" references="/0/SwaggerGeneratorModule/%.1/%.35/%/aSwagger">
+      <details key="start" value="302"/>
+      <details key="end" value="310"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.226" references="/0/SwaggerGeneratorModule/%.1/%.35/%.1">
+      <details key="start" value="328"/>
+      <details key="end" value="335"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.227" references="/0/SwaggerGeneratorModule/%.1/%.36">
+      <details key="start" value="345"/>
+      <details key="end" value="353"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.228" references="/0/SwaggerGeneratorModule/%.2">
+      <details key="start" value="2338"/>
+      <details key="end" value="2339"/>
+      <details key="line" value="92"/>
+    </eAnnotations>
+    <eAnnotations source="positions.229" references="/0/SwaggerGeneratorModule/%.3">
+      <details key="start" value="146"/>
+      <details key="end" value="211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.230" references="/0/SwaggerGeneratorModule/%.3/aSwagger">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.231" references="/0/SwaggerGeneratorModule/aSwagger">
+      <details key="start" value="252"/>
+      <details key="end" value="270"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

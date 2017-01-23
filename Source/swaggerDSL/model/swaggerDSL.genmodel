@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/swaggerDSL/src" modelPluginID="swaggerDSL" modelName="SwaggerDSL"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>swaggerDSL.ecore</foreignModel>
+  <genPackages prefix="SwaggerDSL" disposableProviderFactory="true" ecorePackage="swaggerDSL.ecore#/">
+    <genClasses ecoreClass="swaggerDSL.ecore#//Swagger">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Swagger/swagger"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Swagger/info"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Swagger/host"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Swagger/schemes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Swagger/basePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Swagger/produces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Swagger/paths"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Swagger/definitions"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Info">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Info/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Info/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Info/version"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Paths"/>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Webservice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Webservice/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Webservice/header"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Webservice/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Webservice/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Webservice/tags"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Webservice/responses"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Parameters">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/in"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/required"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Parameters/type"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Tags">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Tags/tag"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Responses"/>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Response">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Response/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Response/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Response/schema"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Schema">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Schema/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Schema/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Definitions"/>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Definition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Definition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Definition/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference swaggerDSL.ecore#//Definition/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="swaggerDSL.ecore#//Properties">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Properties/propertyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Properties/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute swaggerDSL.ecore#//Properties/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

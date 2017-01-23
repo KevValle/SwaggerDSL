@@ -1,0 +1,67 @@
+{
+    "swagger": "Swagger.swagger",
+    "info": {
+        "title": "Swagger.infoTitle",
+        "description": "Swagger.infoDescription",
+        "version": "Swagger.infoVersion"
+    },
+    "host": "Swagger.host",
+    "schemes": [
+        "Swagger.schemes"
+    ],
+    "basePath": "Swagger.basePath",
+	"consumes": [
+		"Swagger.consumes"
+	],
+    "produces": [
+        "Swagger.produces"
+    ],
+    "paths": {
+        "Path.path": {
+            "Path.header": {
+                "summary": "Path.summary",
+                "description": "Path.description",
+                "parameters": [
+                    {
+                        "name": "Parameters.name",
+                        "in": "Parameters.in",
+                        "description": "Parameters.description",
+                        "required": Parameters.required,
+                        "type": "Parameters.type",
+                        "format": "Parameters.format"
+                    }
+                ],
+                "tags": [
+                    "Tags.tag"
+                ],
+                "responses": {
+                    "Response.name": {
+                        "description": "Response.description",
+                        "schema": {
+                            "type": "Response.schemaType",
+                            "items": {
+                                "$ref": "Response.schemaRef"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+    "definitions": {
+        "Definition.name": {
+            "type": "Definition.type",
+            "properties": {
+                "Properties.propertyName": {
+                    "type": "Properties.type",
+                    "description": "Properties.description"
+                }
+            }
+        }
+    }
+}

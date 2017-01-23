@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swaggerDSL:Swagger xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:swaggerDSL="http://www.example.org/swaggerDSL" host="petstore.swagger.io" schemes="http" basePath="/api" produces="application/json" infoTitle="Swagger Petstore" infoDescription="Move your app forward with the Pet  API" infoVersion="1.0.0">
+  <path path="/pets" description="Return every damn pet" summary="Pets" operationID="Pets" produces="application/json">
+    <parameters name="limit" in="query" description="How many items to return" format="int32" type="integer"/>
+    <tags tag="pets"/>
+    <response name="200" description="A list of pets" schemaType="array" schemaRef="#/definitions/Pet"/>
+  </path>
+  <path path="/exposicion" description="Servicio para la exposicion" header="POST" summary="Exposervice" operationID="Expo" produces="application/json">
+    <parameters name="test" in="query" description="query" format="int32" type="integer"/>
+    <parameters name="test2" in="query" description="Hola mundo" required="true" format="int64" type="integer"/>
+    <tags tag="holamundo"/>
+    <response name="200" description="Two" schemaType="string" schemaRef="#/definitions/Two"/>
+  </path>
+  <definition name="Pet" type="object">
+    <properties propertyName="id" type="integer" description="id de la mascota"/>
+    <properties propertyName="name" type="string" description="nombre de la mascota"/>
+  </definition>
+  <definition name="Two" type="string"/>
+</swaggerDSL:Swagger>
